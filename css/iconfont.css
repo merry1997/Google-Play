@@ -1,0 +1,60 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhuanji:before { content: "\e600"; }
+
+.icon-mingxing:before { content: "\e601"; }
+
+.icon-kuaisufan:before { content: "\e65d"; }
+
+.icon-gift:before { content: "\e681"; }
+
+.icon-socialfill:before { content: "\e691"; }
+
+.icon-jifenbao:before { content: "\e6af"; }
+
+.icon-computer:before { content: "\e6b3"; }
+
+.icon-saoyisao:before { content: "\e649"; }
+
+.icon-shangfan:before { content: "\e64a"; }
+
+.icon-xiafan:before { content: "\e65b"; }
+
+.icon-danpin:before { content: "\e7ab"; }
+
+.icon-tequanzhuanshu:before { content: "\e7b9"; }
+
+.icon-up:before { content: "\e6e0"; }
+
+.icon-zhixiangzuo:before { content: "\e8f4"; }
+
+.icon-zhixiangyou:before { content: "\e8f5"; }
+
+.icon-zhixiangshang:before { content: "\e8f6"; }
+
+.icon-left-o:before { content: "\e9a9"; }
+
+.icon-view-list-o:before { content: "\e9d4"; }
+
+.icon-wode:before { content: "\e70b"; }
+
+.icon-pinpaitemai-tianchong:before { content: "\e70c"; }
+
+.icon-shezhi:before { content: "\e70f"; }
+
+.icon-shouye-tianchong:before { content: "\e712"; }
+
+.icon-tixing-tianchong:before { content: "\e716"; }
+
+.icon-baokuan-:before { content: "\e71a"; }
+

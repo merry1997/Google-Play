@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#header-nav .active{
+	color: #fe1743;
+}
+.new-up .moer{
+	float: right;
+	color: #fe1743;
+	font-size: .25rem;
+	margin-right: .4rem;
+}
+.moerr{
+	text-align: right;
+	color: #fe1743!important;
+	font-size: .22rem!important;
+}
+.moer1{
+	border: 1px solid #fe1743;
+	border-radius: .07rem;
+	color: #fe1743;
+	font-size: .2rem;
+	padding: .05rem;
+	margin-right: .4rem;
+}
+.tuijian{
+	width: 5.3rem!important;
+	font-size: .25rem;
+}
+.tuijian figure{
+	width: .9rem;
+	float: left;
+	margin-right: .2rem;
+}
+.tuijian p{
+	font-size: .25rem!important;
+}
+.tuijian .moer-nav{
+	width: .5rem;
+}
+.vid{
+	width: 5.3rem;
+	margin-bottom: .2rem;
+	position: relative;
+}
+.play{
+	width: 1.5rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 999;
+}
+.vid-w{
+	background: url(../images/vid0.png);
+	background-size: cover;
+}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+header{
+	width: 100%;
+	background: #109D58;
+	color: white;
+}
+
+.iconfont{
+	color: white!important;
+	font-weight: bold;
+	font-size: .5rem;
+	margin: .3rem 0 0 .4rem;
+}
+header span{
+	display: inline-block;
+	margin-left: .2rem;
+	font-size: .3rem;
+	font-weight: 700;
+	line-height: 1rem;
+}
+.con-item p{
+	font-size: .3rem!important;
+	margin-top: .1rem!important;
+}
+.con-head{
+	border-bottom: 2px solid #109D58;
+}
+
+.reo,.ppppp{
+	font-size: .32rem;
+	padding: .3rem .4rem 0;
+}
+.reo li{
+	margin-top: .2rem;
+	overflow: hidden;
+}
+.reo li img{
+	width: .5rem;
+	float: left;
+}
+.reo li span{
+	float: left;
+	margin-left: .1rem;
+}
+.tj{
+	padding: .2rem .3rem;
+	font-size: .3rem;
+	color: #109D58;
+	float: right;
+	margin-right: .4rem;
+	margin-top: 3rem;
+}

@@ -1,0 +1,579 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H515A5B6D",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "Google Play",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        
+        "Maps": {
+            "description": "管理地图插件"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": ["portrait-primary","portrait-secondary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					}
+				},
+				"android": {
+					"mdpi": "images/ic_menu_play.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "images/ic_menu_play.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "images/ic_menu_play.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "images/ic_launcher_play_store.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "images/ic_launcher_play_store.png","xxxhdpi":"images/play_store_144px.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": ""
+				}
+			}
+		},"adid":"127616020307"
+	},
+	"dependencies":{
+		"pages": {
+			"home.html": {
+				"href": "home.html",
+				"resources": [
+					"js/index.js",
+					"js/click.js",
+					"js/touach.js",
+					"css/home.css",
+					"images/13.png",
+					"images/03.png",
+					"images/1_01_03.png",
+					"images/11_03.png",
+					"images/23.png",
+					"images/1_03.png",
+					"images/01_03.png"
+				],
+				"priority": 0
+			},
+			"game.html": {
+				"href": "game.html",
+				"resources": [
+					"js/jquery-3.3.1.min.js",
+					"js/index.js",
+					"js/click.js",
+					"js/touach.js",
+					"css/game.css",
+					"images/1_01_03.png",
+					"images/03.png",
+					"images/23.png",
+					"images/13.png",
+					"images/btn_movie_play_normal.png",
+					"images/7.jpg",
+					"images/11_03.png",
+					"images/1_03.png",
+					"images/01_03.png",
+					"video/voez5_muxed.mp4"
+				],
+				"priority": 1
+			},
+			"news.html": {
+				"href": "news.html",
+				"resources": [
+					"js/jquery-3.3.1.min.js",
+					"js/index.js",
+					"js/rem.js",
+					"js/click.js",
+					"js/touach.js",
+					"js/swiper-3.4.2.min.js",
+					"js/swiper.animate1.0.2.min.js",
+					"css/reset.css",
+					"css/style.css",
+					"images/ic_searchbox_google.png",
+					"images/7.jpg",
+					"images/111_normal.png",
+					"images/ic_play_prism_googblue_36dp.png",
+					"images/timg.jpg",
+					"images/tt.png",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"css/animate.min.css",
+					"css/news.css",
+					"images/1111_03.png",
+					"images/2221_05.png",
+					"images/6664_03.png",
+					"images/3331_10.png",
+					"images/4441_12.png",
+					"images/5551_13.png",
+					"images/btn_movie_play_normal.png",
+					"images/7.jpg",
+					"images/13.png",
+					"images/03.png",
+					"images/1_01_03.png",
+					"images/11_03.png",
+					"images/1_03.png",
+					"images/01_03.png",
+					"images/23.png",
+					"video/voez5_muxed.mp4"
+				],
+				"priority": 2
+			},
+			"video.html": {
+				"href": "video.html",
+				"resources": [
+					"js/jquery-3.3.1.min.js",
+					"js/index.js",
+					"js/rem.js",
+					"js/click.js",
+					"js/touach.js",
+					"js/swiper-3.4.2.min.js",
+					"js/swiper.animate1.0.2.min.js",
+					"css/reset.css",
+					"css/style.css",
+					"images/ic_searchbox_google.png",
+					"images/7.jpg",
+					"images/111_normal.png",
+					"images/ic_play_prism_googblue_36dp.png",
+					"images/timg.jpg",
+					"images/tt.png",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"css/animate.min.css",
+					"css/video.css",
+					"images/vid0.png",
+					"images/vid1.png",
+					"images/vid2.png",
+					"images/vid3.png",
+					"images/4441_12.png",
+					"images/3331_10.png",
+					"images/5551_13.png",
+					"images/btn_movie_play_normal.png",
+					"images/7.jpg",
+					"images/13.png",
+					"images/1_03.png",
+					"images/01_03.png",
+					"images/11_03.png",
+					"images/23.png",
+					"images/03.png",
+					"video/voez5_muxed.mp4"
+				],
+				"priority": 3
+			},
+			"photo.html": {
+				"href": "photo.html",
+				"resources": [
+					"js/jquery-1.8.3.min.js",
+					"js/rem.js",
+					"js/click.js",
+					"js/touach.js",
+					"css/reset.css",
+					"css/style.css",
+					"images/ic_searchbox_google.png",
+					"images/7.jpg",
+					"images/111_normal.png",
+					"images/ic_play_prism_googblue_36dp.png",
+					"images/timg.jpg",
+					"images/tt.png",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"css/animate.min.css",
+					"css/photo.css"
+				],
+				"priority": 4
+			},
+			"music.html": {
+				"href": "music.html",
+				"resources": [
+					"js/jquery-3.3.1.min.js",
+					"js/index.js",
+					"js/rem.js",
+					"js/click.js",
+					"js/touach.js",
+					"js/swiper-3.4.2.min.js",
+					"js/swiper.animate1.0.2.min.js",
+					"css/reset.css",
+					"css/style.css",
+					"images/ic_searchbox_google.png",
+					"images/7.jpg",
+					"images/111_normal.png",
+					"images/ic_play_prism_googblue_36dp.png",
+					"images/timg.jpg",
+					"images/tt.png",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"css/animate.min.css",
+					"css/music.css",
+					"images/mu1.png",
+					"images/mu2.png",
+					"images/mu3.png",
+					"images/mu4.png",
+					"images/mu5.png",
+					"images/btn_movie_play_normal.png",
+					"images/7.jpg",
+					"images/1_03.png",
+					"images/01_03.png",
+					"images/11_03.png",
+					"images/23.png",
+					"video/voez5_muxed.mp4"
+				],
+				"priority": 5
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"js/jquery-3.3.1.min.js",
+					"js/index.js",
+					"js/rem.js",
+					"js/click.js",
+					"images/ic_searchbox_google.png",
+					"js/touach.js",
+					"js/swiper-3.4.2.min.js",
+					"js/swiper.animate1.0.2.min.js",
+					"css/reset.css",
+					"css/style.css",
+					"images/ic_searchbox_google.png",
+					"images/7.jpg",
+					"images/111_normal.png",
+					"images/ic_play_prism_googblue_36dp.png",
+					"images/timg.jpg",
+					"images/tt.png",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"css/animate.min.css",
+					"images/1.jpg"
+				],
+				"refer": [
+					"home.html",
+					"game.html",
+					"news.html",
+					"video.html",
+					"photo.html",
+					"music.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images/abc_list_longpressed_holo.9.png",
+				"images/ic_menu_close_clear_cancel_light.png",
+				"images/ic_checkmark_green.png",
+				"images/adaptiveproduct_play_store_background_color_108.png",
+				"images/abc_scrubber_track_mtrl_alpha.9.png",
+				"images/setup_wizard_header_bg_tile.jpg",
+				"images/ic_empty_rate.png",
+				"images/quantum_ic_clear_black_24.png",
+				"images/suw_navbar_ic_down_arrow.png",
+				"images/abc_btn_check_to_on_mtrl_000.png",
+				"images/ic_checkshop.png",
+				"images/ic_perm_media.png",
+				"images/progressbar_indeterminate_holo8.webp",
+				"images/ic_developer_youtube.png",
+				"images/abc_ic_star_half_black_16dp.png",
+				"images/ic_menu_refresh_holo_dark.png",
+				"images/abc_ic_star_black_36dp.png",
+				"images/ic_perm_in_app_purchases.png",
+				"images/wallet_uic_card_mastercard.png",
+				"images/abc_scrubber_control_to_pressed_mtrl_000.png",
+				"images/abc_list_selector_disabled_holo_dark.9.png",
+				"images/abc_btn_check_to_on_mtrl_015.png",
+				"images/ic_promotion_gift.png",
+				"images/progressbar_indeterminate_holo6.webp",
+				"images/ic_menu_translate.png",
+				"images/abc_ic_star_black_48dp.png",
+				"images/progressbar_indeterminate_holo1.webp",
+				"images/abc_tab_indicator_mtrl_alpha.9.png",
+				"images/suw_navbar_ic_left_arrow.png",
+				"images/ic_developer_permission.png",
+				"images/ic_star_rating_graph.png",
+				"images/ic_music_pause.png",
+				"images/ic_perm_scan_wifi.png",
+				"images/common_full_open_on_phone.png",
+				"images/ic_article_error.png",
+				"images/ic_collapse.png",
+				"images/design_ic_visibility_off.png",
+				"images/stat_notify_shield.png",
+				"images/ic_play_store.png",
+				"images/ic_expand_more_18px.png",
+				"images/abc_list_pressed_holo_light.9.png",
+				"images/abc_text_select_handle_middle_mtrl_dark.png",
+				"images/spinner_movies_focused_holo_light.9.png",
+				"images/abc_spinner_mtrl_am_alpha.9.png",
+				"images/ic_more_details_light.png",
+				"images/abc_ic_commit_search_api_mtrl_alpha.png",
+				"images/111.png",
+				"images/abc_list_focused_holo.9.png",
+				"images/abc_ic_menu_cut_mtrl_alpha.png",
+				"images/ic_fp_dialog_successful.png",
+				"images/abc_btn_radio_to_on_mtrl_000.png",
+				"images/abc_ic_menu_paste_mtrl_am_alpha.png",
+				"images/ic_search_white.png",
+				"images/abc_ic_star_black_16dp.png",
+				"images/ic_menu_expander_maximized_light.png",
+				"images/quantum_ic_camera_alt_googblue_24.png",
+				"images/stat_notify_installed.png",
+				"images/ic_developer_email.png",
+				"images/abc_btn_switch_to_on_mtrl_00001.9.png",
+				"images/ic_flagcontent.png",
+				"images/ic_perm_history.png",
+				"images/play_store_144px.png",
+				"images/abc_switch_track_mtrl_alpha.9.png",
+				"images/ic_down_white_16.png",
+				"images/abc_ic_star_half_black_36dp.png",
+				"images/abc_ic_menu_copy_mtrl_am_alpha.png",
+				"images/abc_popup_background_mtrl_mult.9.png",
+				"images/ic_perm_location.png",
+				"images/progressbar_indeterminate_holo7.webp",
+				"images/ic_filter_green.png",
+				"images/ic_logo_play_prism.png",
+				"images/progressbar_indeterminate_holo3.webp",
+				"images/ic_more_vert.webp",
+				"images/action_bar_bg_neutral.9.png",
+				"images/ic_up_white_16.png",
+				"images/abc_scrubber_primary_mtrl_alpha.9.png",
+				"images/abc_ic_menu_share_mtrl_alpha.png",
+				"images/ic_no_wifi.png",
+				"images/ic_expand_less_18px.png",
+				"images/ic_perm_bluetooth_discovery.png",
+				"images/ic_signal_wifi_statusbar_connected_no_internet_1_black_26x24dp.png",
+				"images/ic_add_white_24px.png",
+				"images/ic_thumb_up.png",
+				"images/abc_list_selector_disabled_holo_light.9.png",
+				"images/ic_search_clear_normal.png",
+				"images/wallet_im_carrier_billing_phoenix_phone.png",
+				"images/ic_parental_controls_24dp.png",
+				"images/ic_arrow_forward.png",
+				"images/card_bg_play.9.png",
+				"images/abc_textfield_search_default_mtrl_alpha.9.png",
+				"images/abc_menu_hardkey_panel_mtrl_mult.9.png",
+				"images/abc_scrubber_control_to_pressed_mtrl_005.png",
+				"images/ic_clear_grey600_24dp.png",
+				"images/ic_nfc_in_progress.png",
+				"images/wallet_uic_card_elo.png",
+				"images/progressbar_indeterminate_holo4.webp",
+				"images/ic_developer_privacy.png",
+				"images/abc_btn_switch_to_on_mtrl_00012.9.png",
+				"images/ic_developer_location.png",
+				"images/ic_perm_body_motion.png",
+				"images/ic_whats_new.png",
+				"images/abc_list_pressed_holo_dark.9.png",
+				"images/rate_review_bg.9.png",
+				"images/stat_notify_update.png",
+				"images/spinner_movies_default_holo_light.9.png",
+				"images/ic_external_link.png",
+				"images/ic_gift_box_24dp.png",
+				"images/leak_canary_notification.png",
+				"images/ic_perm_phone.png",
+				"images/abc_text_select_handle_right_mtrl_light.png",
+				"images/ic_search_recent.png",
+				"images/abc_ic_menu_selectall_mtrl_alpha.png",
+				"images/ic_perm_data_setting.png",
+				"images/bg_banner_dialog.png",
+				"images/ic_radio_start_black.png",
+				"images/ic_cloud_off_white_24dp.png",
+				"images/ic_developer_googleplus.png",
+				"images/111_active.png",
+				"images/store_ic_player_badge.png",
+				"images/ic_file_download_grey.png",
+				"images/ic_check_badge_big.png",
+				"images/abc_text_select_handle_right_mtrl_dark.png",
+				"images/ic_profile_none.png",
+				"images/spinner_ab_default_holo_light.9.png",
+				"images/ic_refund_gray_24dp.png",
+				"js/ort.js",
+				"images/ic_enterprise.png",
+				"images/abc_text_select_handle_left_mtrl_light.png",
+				"images/spinner_ab_pressed_holo_light.9.png",
+				"images/abc_ic_star_half_black_48dp.png",
+				"images/wallet_uic_card_generic.png",
+				"images/ic_added_tv.png",
+				"images/ic_help_outline_24px.png",
+				"images/ic_launcher.webp",
+				"images/ic_locked_holo_light.png",
+				"images/spinner_ab_focused_holo_light.9.png",
+				"images/ic_google_settings.png",
+				"images/ic_menu_play.png",
+				"images/abc_cab_background_top_mtrl_alpha.9.png",
+				"images/ic_menu_expander_minimized_light.png",
+				"images/ic_search.png",
+				"images/ic_menu_shop_holo_dark.png",
+				"images/ic_fp_dialog_error.png",
+				"images/ic_share.png",
+				"images/drawer_shadow.9.png",
+				"images/ic_verifyapps.png",
+				"images/logo_googleplay.png",
+				"images/ic_perm_contacts.png",
+				"images/wallet_uic_card_jcb.png",
+				"images/ic_menu_moreoverflow_card_dark_focused.png",
+				"images/wallet_uic_card_diners.png",
+				"images/ic_menu_wish_off.png",
+				"images/ic_perm_cal.png",
+				"images/ic_nfc.png",
+				"images/texture_atlas.webp",
+				"css/swiper-3.4.2.min.css",
+				"images/ic_round_launcher_play_store.png",
+				"images/abc_btn_radio_to_on_mtrl_015.png",
+				"images/wallet_uic_card_cb.png",
+				"js/mui.min.js",
+				"images/ic_perm_identity.png",
+				"images/ic_ocr.png",
+				"images/ic_lock_google_play.png",
+				"images/setup_wizard_illustration_horizontal_tile.jpg",
+				"images/ic_done_white_24dp.png",
+				"images/adaptiveproduct_play_store_foreground_color_108.png",
+				"images/abc_text_select_handle_middle_mtrl_light.png",
+				"images/ic_delete_gray_24dp.png",
+				"images/abc_ab_share_pack_mtrl_alpha.9.png",
+				"images/ic_search_clear_pressed.png",
+				"images/wallet_uic_card_amex.png",
+				"images/ic_settings.png",
+				"images/ic_person.png",
+				"images/ic_flag_d30.png",
+				"images/ic_lightning_badge.webp",
+				"css/mui.min.css",
+				"images/design_ic_visibility.png",
+				"images/ic_cancel_grey600_24dp.png",
+				"images/ic_clear_white_24dp.png",
+				"images/ic_play_prism.png",
+				"images/ic_menu_wish_on.png",
+				"images/ic_network_error.png",
+				"images/wallet_uic_card_discover.png",
+				"images/ephemeral_installer_icon.png",
+				"images/ic_arrow_back_grey600_24dp.png",
+				"images/ic_refresh_white_48dp.png",
+				"images/progressbar_indeterminate_holo2.webp",
+				"images/ic_user_rating.png",
+				"images/stat_notify_update_collapse.png",
+				"images/ic_perm_unknown.png",
+				"images/wallet_uic_cvc_hint_amex.png",
+				"images/ic_notifications_off_black.png",
+				"images/ic_mic_dark.png",
+				"images/abc_textfield_activated_mtrl_alpha.9.png",
+				"images/wallet_uic_card_visa.png",
+				"images/ic_fp_dialog_initial.png",
+				"images/progressbar_indeterminate_holo5.webp",
+				"images/ic_googleplay.png",
+				"images/quantum_ic_radio_button_unchecked_grey600_24.png",
+				"images/ic_reward_store.png",
+				"images/ic_content_clear.webp",
+				"images/ic_gifting_white_36.png",
+				"images/ic_perm_deviceid.png",
+				"images/ic_perm_messaging.png",
+				"images/wallet_uic_cvc_hint_default.png",
+				"images/btn_music_play.png",
+				"images/ic_warning_white_24dp.png",
+				"images/quantum_ic_edit_grey600_24.png",
+				"images/ic_empty_wish.png",
+				"images/stat_notify_installed_collapse.png",
+				"images/ic_developer_website.png",
+				"images/quantum_ic_radio_button_checked_black_24.png",
+				"images/leak_canary_icon.png",
+				"images/spinner_movies_pressed_holo_light.9.png",
+				"images/abc_textfield_default_mtrl_alpha.9.png",
+				"images/ic_warning.png",
+				"images/ic_selected_instrument_light.png",
+				"images/btn_rating_star_focused.png",
+				"images/ic_launcher_play_store.png",
+				"images/ic_purchase_check.png",
+				"images/abc_scrubber_control_off_mtrl_alpha.png",
+				"images/ic_warning_grey.png",
+				"images/ic_music_play.png",
+				"images/ic_perm_camera.png",
+				"images/abc_text_select_handle_left_mtrl_dark.png",
+				"images/suw_navbar_ic_right_arrow.png",
+				"images/ic_perm_microphone.png",
+				"images/ic_added_music.png",
+				"images/ic_done_grey600_24dp.png",
+				"images/abc_textfield_search_activated_mtrl_alpha.9.png",
+				"images/ic_perm_check.png",
+				"images/abc_list_divider_mtrl_alpha.9.png",
+				"images/ic_info_white.png",
+				"images/ic_hidden_cards.png",
+				"images/logo_gpay_cobranding_big.png"
+			]
+		}
+	}
+}
